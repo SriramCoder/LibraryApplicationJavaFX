@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerController">
+   <children>
+      <Button layoutX="264.0" layoutY="40.0" mnemonicParsing="false" onAction="#viewAccounts" text="View Accounts" />
+      <Button layoutX="464.0" layoutY="40.0" mnemonicParsing="false" onAction="#viewBooks" text="View Books" />
+      <Button layoutX="492.0" layoutY="585.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button layoutX="269.0" layoutY="229.0" mnemonicParsing="false" onAction="#addAccount" text="Add Account" />
+      <Label layoutX="112.0" layoutY="111.0" text="Id" />
+      <Label layoutX="109.0" layoutY="142.0" text="Number" />
+      <Label layoutX="109.0" layoutY="176.0" text="Balance" />
+      <TextField fx:id="id" layoutX="232.0" layoutY="106.0" />
+      <TextField fx:id="number" layoutX="232.0" layoutY="137.0" />
+      <TextField fx:id="balance" layoutX="232.0" layoutY="171.0" />
+      <Label layoutX="109.0" layoutY="303.0" text="Number" />
+      <TextField fx:id="numberdelete" layoutX="235.0" layoutY="298.0" />
+      <Button layoutX="259.0" layoutY="347.0" mnemonicParsing="false" onAction="#deleteAccount" text="Delete Account" />
+      <Label layoutX="108.0" layoutY="401.0" text="Original Number" />
+      <Label layoutX="105.0" layoutY="443.0" text="Updated Number" />
+      <Label layoutX="105.0" layoutY="484.0" text="Updated Balance" />
+      <TextField fx:id="originalnumber" layoutX="235.0" layoutY="396.0" />
+      <TextField fx:id="updatednumber" layoutX="235.0" layoutY="438.0" />
+      <TextField fx:id="updatedbalance" layoutX="235.0" layoutY="479.0" />
+      <Button layoutX="257.0" layoutY="526.0" mnemonicParsing="false" onAction="#updateAccount" text="Update Account" />
+   </children>
+</AnchorPane>

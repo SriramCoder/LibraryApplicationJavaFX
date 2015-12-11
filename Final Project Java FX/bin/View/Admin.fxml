@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminController">
+   <children>
+      <Button layoutX="279.0" layoutY="34.0" mnemonicParsing="false" onAction="#createBook" text="Add Book" />
+      <Button layoutX="479.0" layoutY="519.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
+      <Button layoutX="468.0" layoutY="34.0" mnemonicParsing="false" onAction="#viewBook" text="View Book" />
+      <Label layoutX="75.0" layoutY="209.0" text="Updated Name" />
+		<Label layoutX="73.0" layoutY="245.0" text="Updated Author" />
+		<TextField fx:id="name1" layoutX="235.0" layoutY="204.0" />
+		<TextField fx:id="author1" layoutX="235.0" layoutY="240.0" />
+      <Button layoutX="270.0" layoutY="292.0" mnemonicParsing="false" onAction="#updateBook" text="Update Book" />
+      <Button layoutX="273.0" layoutY="519.0" mnemonicParsing="false" onAction="#deleteBook" text="Delete Book" />
+      <Button layoutX="70.0" layoutY="34.0" mnemonicParsing="false" onAction="#viewAccounts" text="View Account" />
+      <Label layoutX="113.0" layoutY="399.0" text="Name" />
+      <TextField fx:id="name2" layoutX="236.0" layoutY="394.0" />
+      <TextField fx:id="author2" layoutX="235.0" layoutY="460.0" />
+      <Label layoutX="110.0" layoutY="465.0" text="Author" />
+      <TextField fx:id="originalname" layoutX="235.0" layoutY="170.0" />
+      <Label layoutX="78.0" layoutY="175.0" text="Original Name" />
+   </children>
+</AnchorPane>

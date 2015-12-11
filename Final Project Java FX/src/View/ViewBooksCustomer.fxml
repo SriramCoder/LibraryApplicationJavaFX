@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.collections.*?>
+<?import fxmltableview.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ViewBooksCustomerController">
+	<children>
+		<TableView fx:id="books" layoutX="57.0" layoutY="86.0" prefHeight="200.0" prefWidth="501.0">
+			<columns>
+				<TableColumn prefWidth="126.0" text="ID">
+					<cellValueFactory>
+						<PropertyValueFactory property="id" />
+	        		</cellValueFactory>
+	        	</TableColumn>
+				<TableColumn minWidth="0.0" prefWidth="165.0" text="Name">
+				<cellValueFactory>
+						<PropertyValueFactory property="name" />
+	        		</cellValueFactory>
+	        	</TableColumn>
+				<TableColumn prefWidth="133.0" text="Author">
+				<cellValueFactory>
+						<PropertyValueFactory property="author" />
+	        		</cellValueFactory>
+	        	</TableColumn>
+
+			 </columns>
+		</TableView>
+		<Button layoutX="455.0" layoutY="315.0" mnemonicParsing="false" onAction="#reserveBook" text="Reserve Book" />
+	</children>
+</AnchorPane>
